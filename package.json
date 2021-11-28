@@ -2,16 +2,19 @@
   "name": "shellcasts",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.22"
-  },
-  "main": "index.js",
-  "repository": "git@github.com:tjaartvdwalt/shellcasts.git",
-  "author": "Tjaart van der Walt <git@tjaart.org>",
-  "license": "None",
-  "private": true
+    "@vitejs/plugin-vue": "^1.9.3",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.4",
+    "vite-plugin-markdown": "^2.0.2"
+  }
 }
