@@ -1,6 +1,6 @@
 ---
 title: Second Title
-description: Describe this awesome content
+description: Describe this awesome content 2
 tags:
   - "great"
   - "awesome"
