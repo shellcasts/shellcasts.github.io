@@ -4,7 +4,7 @@
     v-for="(frontMatter, i) in frontMatters"
     v-bind:key="i"
   >
-    <cast-card :frontMatter="frontMatter" />
+    <cast-card :frontMatter="frontMatter" :index="i + 1" />
   </ul>
 </template>
 <script>

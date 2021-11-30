@@ -1,13 +1,19 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import CastList from './components/CastList.vue'
+import Casts from './views/Casts.vue'
+import Episode from './views/Episode.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'CastList',
-    component: CastList
+    redirect: '/casts',
   },
+  {
+    path: '/casts',
+    name: 'Casts',
+    component: Casts
+  },
+   { path: '/casts/:id', name: 'Episode', component: Episode },
 ]
 
 const router = createRouter({
