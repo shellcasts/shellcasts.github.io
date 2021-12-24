@@ -1,5 +1,8 @@
 <template>
-  <div v-html="html"></div>
+  <img :src="frontMatter.image" style="max-height: 10rem; max-width: 10rem;">
+    <article class="prose lg:prose-xl">
+      <div v-html="html"></div>
+    </article>
 </template>
 <script>
 import { reactive } from "vue"
@@ -13,11 +16,11 @@ export default {
       console.log(route.params.id)
       console.log(markdownFiles[route.params.id - 1])
 
-      let { html } = await import(
+      let { attributes, html } = await import(
         /* @vite-ignore */
         markdownFiles[route.params.id - 1]
       )
-    return { html: reactive(html) }
+    return { frontMatter: reactive(attributes), html: reactive(html) }
   },
 }
 </script>

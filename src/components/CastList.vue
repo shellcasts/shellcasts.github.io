@@ -1,11 +1,14 @@
 <template>
-  <ul
-    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4"
-    v-for="(frontMatter, i) in frontMatters"
-    v-bind:key="i"
+  <div
+    class="grid grid-cols-1 gap-4 max-w-prose"
   >
-    <cast-card :frontMatter="frontMatter" :index="i + 1" />
-  </ul>
+    <cast-card
+      v-for="(frontMatter, i) in frontMatters"
+      v-bind:key="i"
+      :frontMatter="frontMatter"
+      :index="i + 1"
+    />
+  </div>
 </template>
 <script>
 import { reactive } from "vue"

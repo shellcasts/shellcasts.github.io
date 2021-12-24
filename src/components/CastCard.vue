@@ -8,16 +8,18 @@ export default {
 </script>
 
 <template>
-  <li>
-    <router-link
-      :to="`/casts/${index}`"
-      class="hover:bg-light-blue-500 hover:border-transparent hover:shadow-lg group block rounded-lg p-4 border border-gray-200"
-    >
+  <div
+    class="hover:bg-light-blue-500 hover:border-transparent hover:shadow-lg group block rounded-lg p-4 border border-gray-200"
+  >
+    <img :src="frontMatter.image" class="max-h-10 mr-4" style="max-height: 2.5rem; max-width: 2.5rem;" />
+    <router-link :to="`/casts/${index}`">
       <dl
         class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center"
       >
-        <div>
-          <dt class="sr-only">Title</dt>
+        <div class="flex">
+          <dt class="sr-only">
+            Title
+          </dt>
           <dd class="leading-6 font-medium text-black">
             {{ frontMatter.title }}
           </dd>
@@ -40,5 +42,5 @@ export default {
         </div>
       </dl>
     </router-link>
-  </li>
+  </div>
 </template>

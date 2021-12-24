@@ -6,5 +6,7 @@ export default {
 }
 </script>
 <template>
-  <cast-list />
+  <div class="flex">
+  <cast-list class="self-center"/>
+    </div>
 </template>
