@@ -1,0 +1,3 @@
+import{o,d as n,F as c,b as t}from"./vendor.29b16441.js";const m={title:"Awesome Title",description:"Describe this awesome content",image:"https://blog.udemy.com/wp-content/uploads/2014/05/bigstock-test-icon-63758263-620x620.jpg",tags:["great","awesome","rad"]},d=`<h1>This is awesome</h1>
+<p>First entry</p>
+`,u=[{level:"1",content:"This is awesome"}],r=t("h1",null,"This is awesome",-1),i=t("p",null,"First entry",-1);function s(e,l){return o(),n(c,null,[r,i],64)}const a={render:s};a.__hmrId="/home/runner/work/shellcasts.github.io/shellcasts.github.io/src/contents/test1.md";const p=e=>({components:e,render:s});export{a as VueComponent,p as VueComponentWith,m as attributes,d as html,u as toc};

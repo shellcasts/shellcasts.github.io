@@ -1,0 +1,3 @@
+import{o as s,d as o,F as c,b as t}from"./vendor.29b16441.js";const d={title:"Second Title",description:"Describe this awesome content 2",image:"https://martech.org/wp-content/ml-loads/2014/08/lab-test-experiment-ss-1920.jpg",tags:["great","awesome","rad"]},m=`<h1>This is second</h1>
+<p>Second entry</p>
+`,p=[{level:"1",content:"This is second"}],r=t("h1",null,"This is second",-1),i=t("p",null,"Second entry",-1);function n(e,l){return s(),o(c,null,[r,i],64)}const a={render:n};a.__hmrId="/home/runner/work/shellcasts.github.io/shellcasts.github.io/src/contents/test2.md";const u=e=>({components:e,render:n});export{a as VueComponent,u as VueComponentWith,d as attributes,m as html,p as toc};
