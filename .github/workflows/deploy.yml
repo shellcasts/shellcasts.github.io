@@ -48,6 +48,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
+          fqdn: 'shellcasts.org'
           # deploy to gh-pages branch
           build_dir: dist
         env:
