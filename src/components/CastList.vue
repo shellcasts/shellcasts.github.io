@@ -12,6 +12,8 @@
 import { reactive } from "vue"
 import CastCard from "./CastCard.vue"
 
+// let markdown = 'test1'
+// import {attributes} from `@/contents/${markdown}.md`
 export default {
   components: { CastCard },
 
@@ -19,12 +21,11 @@ export default {
     let frontMatters = []
     let markdownFiles = Object.keys(import.meta.glob("../contents/*.md"))
     for (let i = 0; i < markdownFiles.length; i++) {
-      let { attributes } = await import(
-        /* @vite-ignore */
-        markdownFiles[i]
-      )
+      let basename = markdownFiles[i].match(/.*\/+(.*)\.md/)[1]
+      let { attributes } = await import(`../contents/${basename}.md`)
       frontMatters.push(attributes)
     }
+
     return { frontMatters: reactive(frontMatters) }
   },
 }
