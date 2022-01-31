@@ -49,6 +49,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           # deploy to gh-pages branch
+          domain: 'shellcasts.org'
           build_dir: dist
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
